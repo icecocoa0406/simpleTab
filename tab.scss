@@ -1,0 +1,34 @@
+$activeColor:#fff;
+$activeBackgroundColor:#000;
+$color:#000;
+$backgroundColor:#ccc;
+
+.tab{
+    width:500px;
+}
+
+.tab-nav{
+    display:flex;
+}
+
+.tab-nav-item{
+    margin-right: 5px;
+    background-color:$backgroundColor;
+    color:$color;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px 5px 0 0;
+    &.active{
+        background-color:$activeBackgroundColor;
+        color: $activeColor;
+    }
+}
+
+.tab-contents{
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.tab-contents-item{
+    display: none;
+}
